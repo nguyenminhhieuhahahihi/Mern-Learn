@@ -1,0 +1,55 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "hhh",
+    "password": "hhh"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "hhh",
+    "password": "hhh"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAyNjk4ZjBlZGNhYjE3YzY5NDg3NTkiLCJpYXQiOjE2NDQzMjUyNzB9.30pJ6DWsd26t2ui2OlW3lS4PDuyicJBI3ajY2IawIsw
+
+{
+    "title": "hiu post",
+    "description": "dihocbai",
+    "url": "zalo.com",
+    "status": "TO LEARN"
+}
+
+###
+
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAyNjk4ZjBlZGNhYjE3YzY5NDg3NTkiLCJpYXQiOjE2NDQzMjUzOTN9.zfRXUkywFUGR_rYHY_h6hUIscqJiPM4qKTtM8oVsooQ
+
+###
+
+
+PUT http://localhost:5000/api/posts/620269b30edcab17c694875c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAyNjk4ZjBlZGNhYjE3YzY5NDg3NTkiLCJpYXQiOjE2NDQzMjUzOTN9.zfRXUkywFUGR_rYHY_h6hUIscqJiPM4qKTtM8oVsooQ
+
+{
+  "title": "Vue",
+  "description": "VUEEEEE",
+  "url": "https://vuejs.org",
+  "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/620269b30edcab17c694875c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjAyNjk4ZjBlZGNhYjE3YzY5NDg3NTkiLCJpYXQiOjE2NDQzMjUzOTN9.zfRXUkywFUGR_rYHY_h6hUIscqJiPM4qKTtM8oVsooQ
